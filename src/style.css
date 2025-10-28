@@ -1,0 +1,138 @@
+button[value=true]{
+      width:65px;
+  height:40px;
+  border-radius:10px;
+  border:5px;
+  background-color:blue;
+  color:white;
+
+   
+}
+
+button[value=false]{
+    width:65px;
+  height:40px;
+  border-radius:10px;
+  border:5px;
+  background-color:black;
+  color:white;
+ 
+}
+.order-container {
+  text-align: center;
+  padding: 50px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.success-animation {
+  margin-top: 30px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.checkmark {
+  width: 100px;
+  height: 100px;
+  stroke-width: 2;
+  stroke: #4caf50;
+  fill: none;
+  stroke-miterlimit: 10;
+  animation: scale .3s ease-in-out .9s both;
+}
+
+.circle {
+  stroke-dasharray: 157;
+  stroke-dashoffset: 157;
+  stroke: #4caf50;
+  animation: drawCircle 0.6s ease-out forwards;
+}
+
+.check {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  stroke: #4caf50;
+  stroke-width: 5;
+  animation: drawCheck 0.3s ease-out 0.6s forwards;
+}
+
+.order-message {
+  margin-top: 16px;
+  font-size: 18px;
+  color: #28a745;
+}
+.place-button {
+  padding: 12px 24px;
+  font-size: 20px;
+ background-color: transparent;
+ border-top: 4px solid blue;
+ border-bottom: 4px solid blue;
+ border-right: 4px solid blue;
+ border-left: 4px solid blue;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:border-top 0.3s;
+  
+}
+.c-but{
+  width: 70px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: transparent;
+  border-top: 2px solid blue;
+ border-bottom: 2px solid blue;
+ border-right: 2px solid blue;
+ border-left: 2px solid blue;
+ font-size: 13px;
+   transition:border-top 0.3s;
+  
+}
+.c-but:hover{
+  border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    border-right: 2px solid green;
+    border-left: 2px solid green;
+
+}
+
+.place-button:hover {
+    border-top: 4px solid green;
+    border-bottom: 4px solid green;
+    border-right: 4px solid green;
+    border-left: 4px solid green;
+}
+::placeholder {
+  color:white;
+  opacity: 1; /* Firefox */
+}
+
+@keyframes drawCircle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes drawCheck {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
